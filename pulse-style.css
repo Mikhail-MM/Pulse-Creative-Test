@@ -1,0 +1,376 @@
+@font-face {
+    font-family: Helvetica Neue Standard-Condensed;
+    src: url("./HelveticaNeueLTStd-MdCn.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Helvetica Neue Light-Condensed;
+	src: url("./HelveticaNeueLTStd-LtCn.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Helvetica Neue Light;
+	src: url("./HelveticaNeueLTStd-Lt.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Helvetica Neue Condensed;
+	src: url("./HelveticaNeueLTStd-Cn.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Helvetica Neue Bold;
+	src: url("HelveticaNeueLTStd-Bd.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Helvetica Neue Roman;
+	src: url('./HelveticaNeueLTStd-Roman.otf') format("opentype");
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, #root {
+	display: flex;
+	flex-direction: column;
+
+	height: auto;
+	width: 100%;
+
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: rgb(53, 133, 183);
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+.nav__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	position: relative;
+
+	height: 152px;
+	width: 100%;
+
+	padding: 0 12.81%;
+
+}
+
+.nav__logo__imagecontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: auto;
+	width: auto;
+}
+.nav__logo {
+	height: 100px;
+	width: 100px;
+}
+
+.nav__sublogo {
+	width: 70px;
+	height: auto;
+}
+
+.nav__logo__uppercontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	right: 12.81%;
+
+	width: 60px;
+	height: 63px;
+	background-color: rgb(0, 43, 73);
+}
+
+.nav__logo__upper {
+	height: 38px;
+	width: 33px;
+
+	border-bottom: 0.5px solid white;
+}
+
+.nav__logo__upper__text {
+	line-height: 1.2;
+	font-size: 11px;
+	color: white;
+	font-family: "Helvetica Neue Condensed", "Myriad Pro";
+	margin-top: 6px;
+}
+
+
+.nav__inner-container {
+	display: flex;
+	justify-content: space-around;
+	height: 16px;
+	width: 100%;
+	font-family: "Helvetica Neue Standard-Condensed", "Myriad Pro";
+
+	margin-top: 41px;
+}
+
+.jumbotron {
+	position: relative;
+	overflow: hidden;
+
+	width: auto;
+	height: 656px;
+}
+
+.jumbotron__overlay {
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-color: rgba(20, 39, 73, 0.56);
+}
+
+.jumbotron__overlay__c01 {
+	position: absolute;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	top: 58px;
+	right: 186px;
+
+	border-radius: 100px;
+
+	height: 164px;
+	width: 164px;
+
+	background-color: rgba(235, 205, 36, 0.45);
+	z-index: 2;
+}
+
+.jumbotron__overlay__c02 {
+	position: absolute;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	top: 86px;
+	right: 226px;
+
+	height: 386px;
+	width: 386px;
+
+	border-radius: 300px;
+
+	background-color: rgba(6, 60, 96, 0.45)
+}
+
+.jumbotron__overlay__c03 {
+	position: absolute;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	top: 92px;
+	left: -76px;
+
+	height: 646px;
+	width: 646px;
+
+	border-radius: 300px;
+
+	background-color: rgba(24, 5, 112, 0.35)
+}
+
+
+.jumbotron__overlay__c03__header1 {
+  font-size: 36px;
+  font-family: "Helvetica Neue Bold", "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  position: absolute;
+  left: 191.689px;
+  top: 251px;
+}
+
+.jumbotron__overlay__c03__header2 {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Helvetica Neue Roman";
+  line-height: 1.2;
+  color: white;
+  top: 321px;
+  left: 227.964px;
+  padding-left: 12px;
+  border-left: 2px solid white;
+}
+
+.responsive-video {
+	height: auto;
+	width: 100%;
+	min-height: 646px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	height: auto;
+	width: auto;
+	padding: 0 12.81%;
+}
+
+.about__header {
+	padding: 58px 0;
+	font-size: 60px;
+	line-height: 0.967;
+	font-family: "Myriad Pro", "Helvetica Neue Light-Condensed";
+	text-align: center;
+	color: rgb(0, 53, 95);
+}
+
+.about__verbiage {
+	font-size: 20px;
+  	color: rgb(0, 0, 0);
+  	line-height: 1.5;
+  	text-align: center;
+  	font-family: Helvetica Neue Light;
+  	-moz-transform: matrix( 1.01139332539771,0,0,1,0,0);
+  	-webkit-transform: matrix( 1.01139332539771,0,0,1,0,0);
+  	-ms-transform: matrix( 1.01139332539771,0,0,1,0,0);
+}
+
+.main {
+	position: relative;
+	box-sizing: content-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 684px;
+	background: rgba(0,0,0,0.15) url('./bgfoto.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	border-top: 10px solid rgb(78, 138, 190);
+}
+
+.wheel {
+	position: absolute;
+	top: 50px;
+	right: 10.4%;
+}
+
+.main__container {
+	width: 100%;
+	height: 420px;
+
+	padding: 0 12.81%;
+
+	background-color: rgba(216,216,216,0.65);
+}
+
+.main__container__header {
+  font-size: 60px;
+
+  font-family: "Myriad Pro", "Helvetica Neue Light-Condensed";
+  color: rgb(0, 53, 95);
+
+  line-height: 0.967;
+  text-align: left;
+
+  padding-top: 48px;
+  padding-bottom: 34px;
+}
+
+.main__container__verbiage {
+  max-width: 442px;
+  font-size: 20px;
+  font-family: "Myriad Pro", "Helvetica Neue Light";
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  text-align: left;
+
+  -moz-transform: matrix( 1.01139332539771,0,0,1,0,0);
+  -webkit-transform: matrix( 1.01139332539771,0,0,1,0,0);
+  -ms-transform: matrix( 1.01139332539771,0,0,1,0,0);
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 278px;
+
+	font-family: "Myriad Pro", Helvetica Neue Condensed;
+	color: white;
+	font-size: 16px;
+
+	padding: 0 12.81%;
+
+	background-color: rgb(0, 36, 74);
+}
+
+.footer__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 100%;
+	width: auto;
+
+	padding-top: 40px;
+	padding-bottom: 24px;
+}
+
+.footer__left__container {
+	display: flex;
+}
+
+.footer__left__container__inner {
+	margin-left: 50px;
+	margin-top: 36px;
+}
+
+.footer__right {
+	margin-top: 68px;
+}
+
+@media (max-width: 900px) {
+	.nav__container {
+		flex-direction: column;
+		height: auto;
+	}
+	.nav__inner-container {
+		flex-direction: column;
+		height: auto;
+		margin: 12px 0;
+	}
+	.nav__logo__uppercontainer {
+		right: 0;
+	}
+	a {
+		text-align: center;
+	}
+}
