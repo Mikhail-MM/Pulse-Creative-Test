@@ -540,6 +540,9 @@ a, a:link, a:visited, a:hover, a:active {
 	.footer__logo {
 		display: none;
 	}
+	.footer__right{
+		margin-top: 40px;
+	}
 	.main__container__header {
 		font-size: 24px;
 		padding-bottom: 12px;
