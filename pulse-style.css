@@ -390,7 +390,7 @@ a, a:link, a:visited, a:hover, a:active {
 	justify-content: space-between;
 
 	height: 100%;
-	width: auto;
+	width: 100%;
 
 	padding-top: 40px;
 	padding-bottom: 24px;
@@ -471,6 +471,9 @@ a, a:link, a:visited, a:hover, a:active {
 	.responsive-video {
 		height: 656px;
 		width: auto;
+	}
+	.main__container__verbiage {
+		max-width: 100%;
 	}
 }
 
