@@ -196,7 +196,7 @@ a, a:link, a:visited, a:hover, a:active {
 	height: 646px;
 	width: 646px;
 
-	border-radius: 300px;
+	border-radius: 600px;
 
 	background-color: rgba(24, 5, 112, 0.35);
 
@@ -252,6 +252,7 @@ a, a:link, a:visited, a:hover, a:active {
 	font-size: 60px;
 	line-height: 0.967;
 	font-family: "Myriad Pro", "Helvetica Neue Light-Condensed";
+	max-width: 100%;
 	text-align: center;
 	color: rgb(0, 53, 95);
 }
@@ -261,7 +262,7 @@ a, a:link, a:visited, a:hover, a:active {
   	color: rgb(0, 0, 0);
   	line-height: 1.5;
   	text-align: center;
-  	font-family: Helvetica Neue Light;
+  	font-family: Myriad Pro, Helvetica Neue Light;
   	-moz-transform: matrix( 1.01139332539771,0,0,1,0,0);
   	-webkit-transform: matrix( 1.01139332539771,0,0,1,0,0);
   	-ms-transform: matrix( 1.01139332539771,0,0,1,0,0);
@@ -363,6 +364,16 @@ a, a:link, a:visited, a:hover, a:active {
 	margin-top: 68px;
 }
 
+.social-links {
+	display: flex;
+}
+
+.social-icon {
+	height: 23.5px;
+	width: 23.5px;
+	margin-right: 12.5px;
+}
+
 @media (max-width: 900px) {
 	.nav__container {
 		flex-direction: column;
@@ -378,6 +389,13 @@ a, a:link, a:visited, a:hover, a:active {
 	}
 	a {
 		text-align: center;
+	}
+	.social-links {
+		flex-direction: column;
+		margin: auto;
+	}
+	.social-icon {
+		margin-bottom: 11.5px;
 	}
 }
 
@@ -442,5 +460,19 @@ a, a:link, a:visited, a:hover, a:active {
 	.jumbotron__overlay__c03 {
 		top: 262px;
 		left: -176px;
+	}
+}
+
+@media(max-width:386px) {
+	.footer__left__container__inner {
+		margin: 0;
+	}
+	.footer__logo {
+		display: none;
+	}
+	.main__container__header {
+		font-size: 24px;
+		padding-bottom: 12px;
+		padding-top: 18px;
 	}
 }
