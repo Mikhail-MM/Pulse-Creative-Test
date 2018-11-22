@@ -399,6 +399,13 @@ a, a:link, a:visited, a:hover, a:active {
 
 }
 
+@media(max-width: 1126px) {
+	.responsive-video {
+		height: 656px;
+		width: auto;
+	}
+}
+
 @media(max-width: 1046px) {
 	.jumbotron__overlay__c01 {
 		top: 28px;
@@ -414,7 +421,7 @@ a, a:link, a:visited, a:hover, a:active {
 	}
 }
 
-@media(max-width: 650px) {
+@media(max-width: 656px) {
 	.main__container__verbiage {
 		font-size: 16px;
 		text-align: center;
@@ -433,7 +440,7 @@ a, a:link, a:visited, a:hover, a:active {
 		top: 30px;
 	}
 	.jumbotron__overlay__c03 {
-		top: 162px;
+		top: 262px;
 		left: -176px;
 	}
 }
