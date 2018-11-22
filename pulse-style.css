@@ -218,7 +218,7 @@ a, a:link, a:visited, a:hover, a:active {
 .jumbotron__overlay__c03__header2 {
   position: absolute;
   font-size: 30px;
-  font-family: "Helvetica Neue Roman";
+  font-family: "Helvetica Neue Roman", "Myriad Pro";
   line-height: 1.2;
   color: white;
   top: 321px;
@@ -226,6 +226,49 @@ a, a:link, a:visited, a:hover, a:active {
   padding-left: 12px;
   border-left: 2px solid white;
   z-index:7;
+}
+
+.scrolly-notif-container {
+	position: absolute;
+	width: 236px;
+	bottom: 42px;
+	right: calc(50% - 118px);
+	text-align: center;
+	letter-spacing: 1.2px;
+
+  	font-size: 6px;
+  	font-family: "Helvetica Neue Light", "Myriad Pro";
+  	color: rgb(255, 255, 255);
+  	text-transform: uppercase;
+  	line-height: 7.741;
+  	-moz-transform: matrix( 2.55034678390563,0,0,2.56480955130622,0,0);
+  	-webkit-transform: matrix( 2.55034678390563,0,0,2.56480955130622,0,0);
+  	-ms-transform: matrix( 2.55034678390563,0,0,2.56480955130622,0,0);
+  	z-index: 100;
+}
+.scrolly-icon {
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	bottom: 24px;
+	right: calc(50% - 9px);
+	animation: hoverme ease-out 0.8s infinite;
+	z-index: 100;
+}
+
+@keyframes hoverme {
+	0% {
+		transform: translateY(0px);
+	}
+
+	35% {
+		transform: translateY(0px);
+	}
+
+	70% {
+		transform: translateY(12px);
+	}
+
 }
 
 .responsive-video {
@@ -251,7 +294,7 @@ a, a:link, a:visited, a:hover, a:active {
 	padding: 58px 0;
 	font-size: 60px;
 	line-height: 0.967;
-	font-family: "Myriad Pro", "Helvetica Neue Light-Condensed";
+	font-family: "Helvetica Neue Light-Condensed", "Myriad Pro";
 	max-width: 100%;
 	text-align: center;
 	color: rgb(0, 53, 95);
@@ -262,7 +305,7 @@ a, a:link, a:visited, a:hover, a:active {
   	color: rgb(0, 0, 0);
   	line-height: 1.5;
   	text-align: center;
-  	font-family: Myriad Pro, Helvetica Neue Light;
+  	font-family: Helvetica Neue Light, Myriad Pro;
   	-moz-transform: matrix( 1.01139332539771,0,0,1,0,0);
   	-webkit-transform: matrix( 1.01139332539771,0,0,1,0,0);
   	-ms-transform: matrix( 1.01139332539771,0,0,1,0,0);
@@ -301,7 +344,7 @@ a, a:link, a:visited, a:hover, a:active {
 .main__container__header {
   font-size: 60px;
 
-  font-family: "Myriad Pro", "Helvetica Neue Light-Condensed";
+  font-family: "Helvetica Neue Light-Condensed", "Myriad Pro";
   color: rgb(0, 53, 95);
 
   line-height: 0.967;
@@ -314,7 +357,7 @@ a, a:link, a:visited, a:hover, a:active {
 .main__container__verbiage {
   max-width: 442px;
   font-size: 20px;
-  font-family: "Myriad Pro", "Helvetica Neue Light";
+  font-family: "Helvetica Neue Light", "Myriad Pro";
   color: rgb(0, 0, 0);
   line-height: 1.5;
   text-align: left;
@@ -330,7 +373,7 @@ a, a:link, a:visited, a:hover, a:active {
 	width: 100%;
 	height: 278px;
 
-	font-family: "Myriad Pro", Helvetica Neue Condensed;
+	font-family: Helvetica Neue Condensed, "Myriad Pro";
 	color: white;
 	font-size: 16px;
 
@@ -396,6 +439,7 @@ a, a:link, a:visited, a:hover, a:active {
 	}
 	.social-icon {
 		margin-bottom: 11.5px;
+		margin-left: 16px;
 	}
 }
 
@@ -437,6 +481,10 @@ a, a:link, a:visited, a:hover, a:active {
 		top: 162px;
 		left: -176px;
 	}
+	.main__container__verbiage {
+		font-size: 18px;
+		text-align: center;
+	}
 }
 
 @media(max-width: 656px) {
@@ -446,6 +494,9 @@ a, a:link, a:visited, a:hover, a:active {
 	}
 	.main__container__header {
 		font-size: 48px;
+	}
+	.footer {
+		padding: 0 7.81%;
 	}
 }
 @media(max-width: 500px) {
@@ -460,6 +511,12 @@ a, a:link, a:visited, a:hover, a:active {
 	.jumbotron__overlay__c03 {
 		top: 262px;
 		left: -176px;
+	}
+	.scrolly-notif-container {
+		display: none;
+	}
+	.scrolly-icon {
+		bottom: 12px;
 	}
 }
 
